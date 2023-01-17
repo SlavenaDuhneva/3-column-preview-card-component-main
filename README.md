@@ -8,7 +8,7 @@ What I learned : 1 using flex model to struture the main container
                  2 bottun styling
                  3 positioning and playing with colors , fonts ...
                  4 how to use :hover and :active to the bottuns styling
-                 5 @meadia quary to turn the project into responsive mode with changing the flex-direction 
+                 5 @meadia query to turn the project into responsive mode with changing the flex-direction 
                  
 
 
