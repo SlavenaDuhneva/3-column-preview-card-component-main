@@ -1,0 +1,136 @@
+:root {
+
+--clr--bright-orange: hsl(31, 77%, 52%);
+--clr--dark-cyan: hsl(184, 100%, 22%);
+--clr--very-dark-cyan: hsl(179, 100%, 13%);
+
+--clr--transperant-white-p: hsla(0, 0%, 100%, 0.75);
+--clr--light-gray-bg: hsl(0, 0%, 95%);
+
+--ff--text: 'Lexend Deca', sans-serif;
+--ff--heading:'Big Shoulders Display';
+
+--fw--regular: 400;
+--fw--bold: 700;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body { 
+    font-weight: vra(--fw--regular);
+    font-size: 15px;
+    background-color: var(--clr--light-gray-bg);
+}
+
+.cars:nth-of-type(1) {
+    background-color: var(--clr--bright-orange);
+    color:var(--clr--transperant-white-p); 
+    border-radius: 0.3rem 0 0 0.3rem ; 
+}
+.cars:nth-of-type(2) {
+    background-color: var(--clr--dark-cyan);
+    color: var(--clr--transperant-white-p);
+    
+}    
+.cars:nth-of-type(3) {
+    background-color: var(--clr--very-dark-cyan);
+    color: var(--clr--transperant-white-p);
+    border-radius: 0 0.3rem 0.3rem 0;
+    
+    
+}
+.cars {
+    width: 250px;
+    height: 400px;
+    padding: 2.55rem;
+
+}
+button {
+    width: 7.2rem;
+    height: 2.35rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff--text);
+    font-weight: var(--fw--regular);
+    font-size: 13px;
+    position: relative;
+    top: 3rem;
+    border-width: 1.5px;
+    border-color: transparent;
+
+}
+
+.AButton {
+    color:var(--clr--bright-orange);
+}
+.AButton:active {
+    color: white;
+    background-color: var(--clr--bright-orange);
+    border-color: white;
+    
+    
+}
+.BButton {
+    color:var(--clr--dark-cyan);
+
+}
+.BButton:active {
+    color: white;
+    background-color: var(--clr--dark-cyan);
+    border-color: white; 
+}
+.CButton {
+    color:var(--clr--very-dark-cyan);
+}
+.CButton:active {
+    color: white;
+    background-color: var(--clr--very-dark-cyan);
+    border-color: white;
+    
+}
+img {
+    display: inline-block;
+    top: 1rem;
+    margin-bottom: 1.6rem;
+    width: 52px;
+    height: 32px;
+}
+h1 {
+    font-family: var(--ff--heading);
+   margin-bottom: 1.8rem;
+}
+p {
+    font-family: var(--ff--text);
+    font-weight: var(--fw--regular);
+    color: var(--clr--transperant-white-p);
+    font-size: 12px;
+    line-height: 1.3rem;    
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .cars {
+        height: 400px;
+    }
+}
+
+
